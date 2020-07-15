@@ -1,0 +1,17 @@
+<div class="layout-column align-items-center mt-50">
+  <section class="layout-row align-items-center justify-content-center">
+    <input type="number" class="large" placeholder="Enter Year eg 2015"
+           data-test-id="app-input" id="year"/>
+    <button class="" data-test-id="submit-button" (click)="cargar()">Search</button>
+  </section>
+
+
+  <ul class="mt-50 styled" data-test-id="movieList" *ngFor='let movie of movies'>
+    <li class="slide-up-fade-in py-10">{{movie.Title}}</li>
+  </ul>
+
+  <div class="mt-50 slide-up-fade-in"
+       data-test-id="no-result"></div>
+</div>
+
+https://git-rba.hackerrank.com/git/eb851968-0c3c-4b17-a28e-d1a1c0a5740c
